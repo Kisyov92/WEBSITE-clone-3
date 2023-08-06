@@ -28,6 +28,45 @@ body {
   margin: 0 auto;
 }
 
+.main-section {
+  padding-top: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.section-headings {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.section-heading {
+  color: #333;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+.section-subheading {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.section-underline {
+  height: 2px;
+  width: 7rem;
+  background-color: #4d8cf5;
+  margin: 2rem auto 0;
+}
+
+.white-color {
+  /* background-color: #fff; */
+  color: #fff;
+}
+.white-bg {
+  background-color: #fff;
+}
+
 /**************************/
 /* SECTION HERO */
 /**************************/
@@ -40,6 +79,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 4.8rem;
 }
 
 /* NAV BAR */
@@ -152,4 +192,120 @@ body {
 
 .arrow-icon {
   height: 4rem;
+}
+
+/**************************/
+/* SECTION ABOUT */
+/**************************/
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-text,
+.about-img {
+  width: 50%;
+}
+
+.about-text {
+  line-height: 1.5;
+}
+
+.p-separation {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+}
+
+/**************************/
+/* SECTION PORTFOLIO */
+/**************************/
+
+.portfolio-cta {
+  text-align: center;
+  padding: 3.5rem;
+}
+
+.portfolio-images {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-img--container {
+  width: 25%;
+}
+
+.portfolio-img {
+  display: block;
+  max-height: auto;
+  width: 100%;
+}
+
+.portfolio-btn:link,
+.portfolio-btn:visited {
+  color: #333;
+}
+.portfolio-btn:active,
+.portfolio-btn:hover {
+  color: #fff;
+}
+
+.portfloio-cta--text {
+  font-size: 2.2rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+/**************************/
+/* SECTION TESTIMONIALS */
+/**************************/
+
+.testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/testimonial-img.jpg);
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+}
+
+.testimonial-text {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  width: 94rem;
+  margin: 0 auto 1.5rem;
+}
+
+.testimonial-author {
+  color: #4d8cf5;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.testimonial-carasel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.testimonial-carasel--dot {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.dot-active {
+  background-color: #fff;
 }
