@@ -1,0 +1,155 @@
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  color: #5c5c5c;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  width: 117rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* SECTION HERO */
+/**************************/
+
+.section-hero {
+  color: #fff;
+  padding-top: 3.2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(images/hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NAV BAR */
+
+.main-nav {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.main-nav--logo {
+  padding: 3rem 1.5rem;
+}
+
+.main-nav--list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.main-nav--link:link,
+.main-nav--link:visited {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 3rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+
+  display: inline-block;
+
+  /*#0082f3*/
+}
+
+.main-nav--link:hover,
+.main-nav--link:active {
+  color: #4d8cf5;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+  text-align: center;
+  width: 90.8rem;
+  height: 61.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-heading {
+  font-size: 5.8rem;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.hero-subheading {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* CTA BUTTONS */
+
+.hero-cta {
+  padding: 1.5rem;
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  margin: 1rem;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.btn-fill:link,
+.btn-fill:visited {
+  background-color: #4d8cf5;
+}
+.btn-fill:hover,
+.btn-fill:active {
+  background-color: #222;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  border: 1px solid #4d8cf5;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #4d8cf5;
+}
+
+/* SCROLL BUTTON */
+
+.hero-scroll {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.arrow-icon {
+  height: 4rem;
+}
