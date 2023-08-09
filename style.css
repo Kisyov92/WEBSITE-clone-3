@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.main-section {
+.linked-section {
   padding-top: 4.8rem;
   margin-bottom: 4.8rem;
 }
@@ -240,6 +240,7 @@ body {
 
 .portfolio-img--container {
   width: 25%;
+  position: relative;
 }
 
 .portfolio-img {
@@ -355,6 +356,7 @@ body {
 }
 
 .team-member {
+  position: relative;
   padding: 1.5rem;
   text-align: center;
 }
@@ -574,4 +576,53 @@ body {
 .credit:hover,
 .credit:active {
   color: #fff;
+}
+
+/**************************/
+/* JS STZLES */
+/**************************/
+
+.fixed-nav {
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.9);
+  position: fixed;
+  top: -85px;
+  transform: translateY(85px);
+  transition: all 0.5s ease-out;
+}
+
+.nav-missing {
+  padding-top: 11.54rem;
+}
+
+.observed:link,
+.observed:visited {
+  color: #0082f3;
+  transition: all 0.5s;
+}
+
+.portfolio-caption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px #000;
+  /* transition: background 1s; */
+  transition: all 1s ease-out;
+  padding-top: 7rem;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visible {
+  padding-top: 0;
+  background: rgba(77, 139, 245, 0.75); /* Black see-through */
+  opacity: 1;
 }

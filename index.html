@@ -14,23 +14,27 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <section class="section-hero">
-      <nav class="main-nav container">
-        <a href="#" class="main-nav--logo"
-          ><img src="images/hero-logo.png" alt="the company's logo"
-        /></a>
-        <ul class="main-nav--list">
-          <li><a href="#" class="main-nav--link">home</a></li>
-          <li><a href="#" class="main-nav--link">about</a></li>
-          <li><a href="#" class="main-nav--link">portfolio</a></li>
-          <li><a href="#" class="main-nav--link">services</a></li>
-          <li><a href="#" class="main-nav--link">team</a></li>
-          <li><a href="#" class="main-nav--link">blog</a></li>
-          <li><a href="#" class="main-nav--link">contact</a></li>
-        </ul>
-      </nav>
+    <section id="home" class="linked-section section-hero">
+      <div class="main-nav--container">
+        <nav class="main-nav container">
+          <a href="#" class="main-nav--logo"
+            ><img src="images/hero-logo.png" alt="the company's logo"
+          /></a>
+          <ul class="main-nav--list">
+            <li><a href="#home" class="main-nav--link">home</a></li>
+            <li><a href="#about" class="main-nav--link">about</a></li>
+            <li><a href="#portfolio" class="main-nav--link">portfolio</a></li>
+            <li><a href="#services" class="main-nav--link">services</a></li>
+            <li><a href="#team" class="main-nav--link">team</a></li>
+            <li><a href="#blog" class="main-nav--link">blog</a></li>
+            <li><a href="#contact" class="main-nav--link">contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="hero-content container">
         <h1 class="hero-heading">clean and flexible template</h1>
@@ -64,7 +68,7 @@
     </section>
 
     <main class="main">
-      <section class="main-section about">
+      <section id="about" class="linked-section section-about">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">About us</h2>
@@ -102,7 +106,7 @@
         </div>
       </section>
 
-      <section class="main-section portfolio">
+      <section id="portfolio" class="linked-section section-portfolio">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">Portfolio</h2>
@@ -119,6 +123,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">GRAPHIC DESIGN</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -126,6 +131,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">PRINT DESIGN</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -133,6 +139,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">MOBILE APPS</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -140,6 +147,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">3D DRAWING</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -147,6 +155,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">INTERIOR DESIGN</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -154,6 +163,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">WEB DESIGN</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -161,6 +171,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">GRAPHIC DESIGN</figcaption>
           </figure>
           <figure class="portfolio-img--container">
             <img
@@ -168,6 +179,7 @@
               alt="stairs"
               class="portfolio-img"
             />
+            <figcaption class="portfolio-caption">HOME DESIGN</figcaption>
           </figure>
         </div>
         <div class="container portfolio-cta">
@@ -176,7 +188,7 @@
         </div>
       </section>
 
-      <section class="main-section testimonials">
+      <section class="testimonials">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading white-color">Testimonials</h2>
@@ -199,7 +211,7 @@
         </div>
       </section>
 
-      <section class="main-section section-services">
+      <section id="services" class="linked-section section-services">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">Services</h2>
@@ -273,7 +285,7 @@
         </div>
       </section>
 
-      <section class="main-section section-team">
+      <section id="team" class="linked-section section-team">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">Awesome team</h2>
@@ -324,7 +336,7 @@
         </div>
       </section>
 
-      <section class="main-section section-video">
+      <section class="section-video">
         <div class="container">
           <img class="video-btn" src="images/play-btn.svg" alt="play button" />
           <p class="video-text">
@@ -336,7 +348,7 @@
         </div>
       </section>
 
-      <section class="main-section section-news">
+      <section id="blog" class="linked-section section-news">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">LATEST NEWS</h2>
@@ -402,7 +414,7 @@
         </div>
       </section>
 
-      <section class="main-section section-contact">
+      <section id="contact" class="linked-section section-contact">
         <div class="container">
           <div class="section-headings">
             <h2 class="section-heading">KEEP IN TOUCH</h2>
